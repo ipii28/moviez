@@ -3,14 +3,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #17191d;
   height: 70px;
   display: flex;
+  font-family: 'Abril Fatface', cursive;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(194, 5, 5);
+  font-size: calc(20px + 2vmin);
+  color: rgb(247, 225, 28);
   padding: 20px;
   cursor: pointer;
 }
@@ -34,6 +35,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-left: 50px;
+  margin-right: 0px;
 }
 
 .App-header h2 {
@@ -51,8 +54,22 @@
 }
 
 .movie {
-  padding: 5px 25px 10px 25px;
-  max-width: 25%;
+  padding: 5px 15px 10px 15px;
+  width: 25%;
+  border: 1px solid black;
+  margin: 10px 30px 20px 30px;
+}
+
+.movie h2 {
+  margin: 5%;
+  font-size: large;
+  text-align: center;
+}
+
+.movie img {
+  display: flex;
+  height: 300px;
+  margin: auto;
 }
 
 .errorMessage {
@@ -67,26 +84,28 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10px;
+
 }
 
 input[type="submit"] {
-  padding: 5px;
+  padding: 10px;
   background-color: transparent;
   color: black;
-  border: 1px solid black;
-  width: 80px;
+  border: 1.5px solid black;
+  width: 90px;
   margin-left: 5px;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
   background-color: #282c34;
-  color: antiquewhite;
+  color: rgb(247, 225, 28);
 }
 
 .search > input[type="text"]{
   width: 40%;
   min-width: 170px;
+  border: 1.5px ridge rgb(224, 221, 15)
 }
 
 @media screen and (min-width: 694px) and (max-width: 915px) {
